@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://img.freepik.com/free-vector/smiling-bear-valentine-s-day-background_23-2148013849.jpg?w=740&t=st=1687627825~exp=1687628425~hmac=ade475dac651f29a91352e8fbfbc9126714fdca9814006779963995e77060bc4');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        header{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <body>
+        <header>
+           <div class="card w-50 m-auto text-center" >
+            <div class="card-header bg-danger">Love Calculator</div>
+            <div class="card-body">
+                <form class="form-inline w-75 m-auto">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="your name">
+                    </div>
+                    <div><span></span class="pl-4 pr-4"> + </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Love name">
+                    </div>
+                </form>
+                <br>
+                <div class="w-75 m-auto">
+                    <button class="btn btn-success w-40" onclick="checklove()">Click</button>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="" id="love" class="form-control text-center w-25 m-auto" placeholder="love percentage">
+                </div>
+            </div>
+            <div class="card-footer">God bless you...</div>
+           </div>
+        </header>
+        <script>
+            function checklove(){
+                var lovedata=Math.random()*100;
+                lovedata=Math.floor(lovedata);
+                document.getElementById('love').value = lovedata + "%";
+            }
+        </script>
+    </body>
+</html>
